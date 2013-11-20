@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FocusDog</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="jay_li" name="author">
+    <meta content="xsolife.com - Segment Of Jay's Life..." name="description">
+    <meta content="focusmail dog" name="keywords">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="320" name="MobileOptimized">
+    <meta content="width=device-width,minimum-scale=1,maximum-scale=1" name="viewport">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+    <script src="/js/bootstrap.js" type="text/javascript"></script>
+    <script src="/js/jquery.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div style="position: absolute;" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div style="width: auto; padding-left: 15%;padding-right:10%;" class="container">
+          <a href="#" class="brand">FocusMail日志管理平台</a>
+          <ul class="nav pull-right">
+              <li><a href="" target="_blank">登陆FocusMail</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container clearfix" style="margin-top:50px;">
+      <div class="row-fluid">
+        <div class="span12" style="width:970px;margin-left:100px;">
+          <div class="span12">
+  
+          <h3>FocusMail 日志报告 2013/11/19</h3>
+          <h4>代理服务器日志信息
+            <small>
+              <a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/19/list'>文件列表</a>
+	    </small>
+	  </h4>
+          <table border='1' style='text-align:center;'>
+            <thead>
+              <th>代理服务器ip</th>
+              <th>日志文件数量</th>
+              <th>日志文件总大小</th>
+              <th>日志文件总行数</th>
+            </thead>
+        
+              <tr>
+                 <td>112.124.37.111</td>
+                 <td>1</td>
+                 <td>22101b</td>
+                 <td>147
+</td>
+              </tr>
+        
+              <tr>
+                 <td>199.101.118.98</td>
+                 <td>117</td>
+                 <td>87424b</td>
+                 <td>815
+</td>
+              </tr>
+        
+              <tr>
+                 <td>211.72.253.17</td>
+                 <td>27</td>
+                 <td>296b</td>
+                 <td>2
+</td>
+              </tr>
+        </table>
+          <h4>过去7天代理服务器日志信息对比</h4>
+          <table border='1' style='text-align:center;'>
+            <thead>
+              <th>日期</th>
+              <th>代理服务器数量</th>
+              <th>日志文件总大小</th>
+              <th>日志文件总行数</th>
+              <th>当天日志报告</th>
+            </thead>
+              <tr>
+                 <td>2013/11/19</td>
+                 <td>3</td>
+                 <td>109821b</td>
+                 <td>964</td>
+                 <td>今天日志报告</td>
+              </tr>
+        
+              <tr>
+                 <td>2013/11/18</td>
+                 <td>3</td>
+                 <td>1015924b</td>
+                 <td>4187</td>
+                 <td><a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/18/report'>查看</a></td>
+              </tr>
+            
+              <tr>
+                 <td>2013/11/17</td>
+                 <td>3</td>
+                 <td>100974b</td>
+                 <td>928</td>
+                 <td><a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/17/report'>查看</a></td>
+              </tr>
+            
+              <tr>
+                 <td>2013/11/16</td>
+                 <td>3</td>
+                 <td>102948b</td>
+                 <td>936</td>
+                 <td><a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/16/report'>查看</a></td>
+              </tr>
+            
+              <tr>
+                 <td>2013/11/15</td>
+                 <td>3</td>
+                 <td>905489b</td>
+                 <td>3777</td>
+                 <td><a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/15/report'>查看</a></td>
+              </tr>
+            
+              <tr>
+                 <td>2013/11/14</td>
+                 <td>3</td>
+                 <td>101606b</td>
+                 <td>931</td>
+                 <td><a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/14/report'>查看</a></td>
+              </tr>
+            
+              <tr>
+                 <td>2013/11/13</td>
+                 <td>3</td>
+                 <td>237928b</td>
+                 <td>1323</td>
+                 <td><a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/13/report'>查看</a></td>
+              </tr>
+            
+              <tr>
+                 <td>2013/11/12</td>
+                 <td>3</td>
+                 <td>932512b</td>
+                 <td>3350</td>
+                 <td><a class='btn btn-mini' href='http://focusdog.xsolife.com/archive/13/11/12/report'>查看</a></td>
+              </tr>
+            </table>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    $(function(){
+       $("table").removeAttr("border");
+       $("table").addClass("table table-bordered table-condensed table-hover");
+       $("table th").css("text-align","center");
+       $("table td").css("text-align","center");
+    });
+  </script>
+</html>
