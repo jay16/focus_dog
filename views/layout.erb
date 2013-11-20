@@ -12,6 +12,13 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
     <script src="/js/bootstrap.js" type="text/javascript"></script>
     <script src="/js/jquery.js" type="text/javascript"></script>
+    <style>
+    .box-shadow {
+      -webkit-box-shadow:2px 2px 2px gray, -2px -2px 2px gray;
+      -moz-box-shadow:2px 2px 2px gray, -2px -2px 2px gray;
+      box-shadow:2px 2px 2px gray, -2px -2px 2px gray;
+    }
+    </style>
   </head>
 
   <body>
@@ -28,7 +35,7 @@
 
     <div class="container clearfix" style="margin-top:50px;">
       <div class="row-fluid">
-        <div class="span12" style="width:970px;margin-left:100px;padding:5px 10px;border-radius: 3px;box-shadow: 2px 2px 2px 2px gray;min-height: 400px;">
+        <div class="span12 box-shadow" style="width:970px;margin-left:100px;padding:5px 10px;border-radius: 3px;min-height: 400px;">
           <%= yield %>
         </div>
       </div>
