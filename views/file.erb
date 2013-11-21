@@ -1,0 +1,8 @@
+<div class="span12">
+  <h3>FocusMail 日志报告 <%= @ymd %>
+    <a class="btn btn-mini" href="/archive/<%= @ymd %>/report">返回</a>
+  </h3>
+  <%= @name %>内容如下:
+
+  <pre><%= helper_view("file", @datetime, @name) %></pre>
+</div>

@@ -1,16 +1,16 @@
 helpers do
-  def find_file(type, datetime, name)
+  def helper_view(type, datetime, name)
     if type == "archive" 
-      basepath = "/mnt/work/etl/agent"
-      filetype = ".html"
+      base_path = "/mnt/work/etl/agent"
+      file_name = name+".html"
     else
-      basepath = "/mnt/work/etl/logs/byday"
-      filetype = ".log"
+      base_path = "/mnt/work/etl/logs/byday"
+      file_name = name
     end
 
-    archive_path = File.join(basepath,datetime,name+filetype)
+    archive_path = File.join(base_path,datetime,file_name)
     if File.exist?(archive_path)
-      IO.readlines(archive_path).join
+      IO.read(archive_path)
     else
       archive_path+" Not Found!"
     end
