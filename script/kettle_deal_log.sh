@@ -126,6 +126,7 @@ $(mv ${logpool}/* ${archive})
 #同步log数据至FocusMail
 /mnt/work/etl/crond/ruby_oci.sh > /mnt/work/etl/logs/crond_ruby_oci.log 2>&1
 
+chown -R webuser:webuser /mnt/work/etl/logs/byday/
 #生成日志报告
 export LANG=en_US.UTF-8
 /usr/local/rvm/rubies/ruby-1.9.2-p320/bin/ruby /mnt/work/etl/crond/focusmail_log_report.rb

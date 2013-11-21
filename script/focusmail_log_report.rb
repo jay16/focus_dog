@@ -184,7 +184,7 @@ def list(baseurl, num)
         data_path = File.join(dest_path,ymd)
         dd_path = File.join(data_path,"list.csv")
         lines = File.readlines(dd_path).map { |line| line.split(/,/) }
-        today_table = "
+        today_table = %Q{
           <h3>FocusMail 日志报告 #{format}</h3>
           <h4>文件列表
             <small>
@@ -197,19 +197,23 @@ def list(baseurl, num)
               <th>文件大小</th>
               <th>文件行数</th>
               <th>创建时间</th>
+              <th>查看内容</th>
             </thead>
-        "
+        }
 
         details = String.new
         lines.each do |line|
-          details << "
+          details << %Q{
               <tr>
                  <td>#{line[1]}</td>
                  <td>#{line[2]}b</td>
                  <td>#{line[3]}</td>
                  <td>#{line[4]}</td>
+                 <td>
+		   <a class='btn btn-mini' href='/file/#{ymd_t}/#{line[1]}'>查看</a>
+		 </td>
               </tr>
-        "
+          }
         end
 
         today_table << details
@@ -223,7 +227,7 @@ def list(baseurl, num)
 end
 
 data_list(1)
-baseurl = "http://focusdog.xsolife.com"
+baseurl = "http://shengyin.info"
 report(baseurl, 1)
 list(baseurl, 1)
 
@@ -239,7 +243,6 @@ def send_mail(email)
         report = File.readlines(File.join(dest_path,ymd,"report.html")).join(" ")
 
         base_url = "http://xsolife.com/api/sendmail"
-        #pp = {:email => "527130673@qq.com", :subject => "#{Time.now.strftime('%Y/%m/%d')} FocusMail Log报告", :content => report}
         pp = {:email => email,
           :from => "FocusMail Assistant<noreply@focusmail.com>",
           :subject => "FocusMail 日志报告 #{Time.now.strftime('%Y/%m/%d')}",
@@ -262,6 +265,6 @@ def send_mail(email)
         end
 end
 
-#send_mail("jay_li@intfocus.com")
-#send_mail("albert_li@intfocus.com")
-#send_mail("eric_yue@intfocus.com")
+send_mail("jay_li@intfocus.com")
+send_mail("albert_li@intfocus.com")
+send_mail("eric_yue@intfocus.com")
