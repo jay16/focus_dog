@@ -1,5 +1,4 @@
-source 'http://ruby.taobao.org'
-#source "https://rubygems.org"
-
-gem 'sinatra'
-gem 'thin'
+source "http://ruby.taobao.org"
+gem "sinatra"
+gem "thin"
+~
