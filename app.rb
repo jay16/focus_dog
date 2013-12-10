@@ -1,5 +1,6 @@
 #helper
 require %Q{#{File.dirname(__FILE__)}/helper.rb}
+require %Q{#{File.dirname(__FILE__)}/authentication.rb}
 
 configure do
   enable :logging                                                           
