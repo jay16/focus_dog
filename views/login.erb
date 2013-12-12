@@ -1,0 +1,18 @@
+<div class="solife-login-form">
+  <div class="solife-login-inner">
+  
+    <form novalidate="novalidate" method="post" class="simple_form new_user" action="/login" accept-charset="UTF-8"><div style="margin:0;padding:0;display:inline"><input type="hidden" value="?" name="utf8"><input type="hidden" value="bR5e7iixclbePaaiibeLmBOMGk0b+LrVNC+GJ1M2Yz4=" name="authenticity_token"></div>
+        <div class="control-group email required user_email"><div class="controls"><div class="input-prepend">
+                <span class="add-on"><span class="solife-login login-user"></span></span>
+                <input type="text" value="" size="50" placeholder="登陆邮箱" pattern="\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z" name="email" maxlength="255" id="user_email" class="string email required" autofocus="autofocus">
+        </div></div></div>
+       
+        <div class="control-group password optional user_password"><div class="controls"><div class="input-prepend">
+          <span class="add-on"><span class="solife-login login-pwd"></span></span>
+          <input type="password" size="50" placeholder="密码" name="password" maxlength="128" id="user_password" class="password optional">
+        </div></div></div>
+        <input type="hidden" value="0" name="user[remember_me]"><label class="checkbox"><input type="checkbox" value="1" name="user[remember_me]" inline_label="记住密码" id="user_remember_me" class="boolean optional">记住密码</label>
+        <input type="submit" value="登陆" name="commit" class="btn btn-primary btn-primary btn-info right">
+    </form>
+  </div>
+</div>

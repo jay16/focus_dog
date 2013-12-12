@@ -1,12 +1,19 @@
 source "http://ruby.taobao.org"
 
+#sinatra
 gem "sinatra"
-gem "thin"
+gem "sinatra-flash"
+gem "sinatra-mapping"
 
-gem 'haml'
-gem 'dm-core'
-gem 'dm-migrations'
-gem 'sinatra-flash'
-gem 'sinatra-authentication'
-gem 'dm-sqlite-adapter'
+#db
+gem "dm-core"
+gem "dm-migrations"
+gem "dm-timestamps"
+gem "dm-sqlite-adapter"
+
+#assets
+gem "sass"
+gem "haml"
+
+gem "thin"
 

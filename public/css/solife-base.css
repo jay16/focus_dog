@@ -1,0 +1,248 @@
+@charset "UTF-8";
+.center {
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.hover-hand:hover {
+}
+.hide {
+    display: none;
+}
+.show-block {
+    display: block;
+}
+.show-inline {
+    display: inline;
+}
+.no-padding {
+    padding: 0;
+}
+.padding-top {
+    padding: 15px 0 0;
+}
+.no-margin {
+    margin: 0;
+}
+.no-margin-left {
+    margin-left: 0;
+}
+.margin-right {
+    margin-right: 15px;
+}
+.margin-top {
+    margin-top: 15px;
+}
+.width {
+    width: 80%;
+}
+.line-separator {
+    background: none repeat scroll 0 0 #717171;
+    border-bottom: 1px solid #A9A9A9;
+    height: 0;
+    margin: 5px 0;
+}
+.banner {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 5px;
+}
+.nolink {
+    text-decoration: none;
+}
+.nolink:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer {
+    bottom: 0;
+    color: #808080;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+#solife-login-modal {
+    padding: 0;
+}
+#solife-login-modal .modal-header h3 {
+    color: #AAAAAA;
+    font-weight: normal;
+    line-height: 27px;
+}
+.solife-login-form {
+    width: 100%;
+}
+.solife-login-form .solife-login-inner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 8px;
+    height: auto;
+    margin: 0 auto;
+    max-height: 800px;
+    max-width: 900px;
+    min-height: 300px;
+    min-width: 400px;
+    padding: 5px 20px 10px;
+    width: 400px;
+}
+.solife-login-form .solife-login-inner .simple_form input[type="submit"] {
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+}
+.solife-login-form .solife-login-inner .simple_form .error-message-field {
+    color: #FF0000;
+}
+.solife-login-form .solife-login-inner .simple_form .control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 110px;
+}
+.solife-login-form .solife-login-inner .simple_form .control-group {
+    margin-bottom: 0;
+}
+.solife-login-form .solife-login-inner .simple_form .control-group .controls {
+    margin-left: 0;
+    text-align: left;
+}
+.solife-login-form .solife-login-inner .simple_form .control-group .controls input {
+    border-left: medium none;
+    font-size: 18px;
+    height: 30px;
+    width: 350px;
+}
+.solife-login-form .solife-login-inner .simple_form .control-group .controls .add-on {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 30px;
+}
+.solife-login-form .solife-login-inner .simple_form .checkbox {
+    padding-left: 0;
+}
+.solife-login-form .solife-login-inner .simple_form .checkbox input[type="checkbox"] {
+    margin-left: 0;
+    width: 20px;
+}
+.solife-login-form .solife-login-inner .table td:first-child {
+    text-align: right;
+    width: 25%;
+}
+.solife-login-form .solife-login-inner .social-login {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 15px auto;
+    padding: 0 0 15px;
+    position: relative;
+}
+.solife-login-form .solife-login-inner .social-login .sorry {
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: -10px;
+    color: #AAAAAA;
+    font-family: "Helvetica Neue",Helvetica,Arial,'Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;
+    font-size: 14px;
+    height: 20px;
+    left: 50%;
+    line-height: 20px;
+    margin-left: -30px;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+}
+.solife-login-form .solife-login-inner .btn-google {
+    background: url("https://dn-pragmaticly.qbox.me/assets/landing-sprite.png") no-repeat scroll -460px 0 #396FC5;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    line-height: 30px;
+    padding: 0;
+}
+.solife-login-form .solife-login-inner .btn-google span {
+    background: none repeat scroll 0 0 #4787ED;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 -2px rgba(0, 0, 0, 0.1) inset;
+    display: block;
+    margin-left: 58px;
+    padding: 10px 0;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s ease 0s;
+    width: auto;
+}
+.solife-login-form .solife-login-inner .btn-google:hover, .solife-login-form .solife-login-inner .btn-google:focus, .solife-login-form .solife-login-inner .btn-google:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.solife-login-form .solife-login-inner .btn-google:hover span, .solife-login-form .solife-login-inner .btn-google:focus span, .solife-login-form .solife-login-inner .btn-google:active span {
+    background: none repeat scroll 0 0 #396FC5;
+}
+.loading {
+    background-color: #000000;
+    border-radius: 5px 5px 6px 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-size: 18px;
+    left: 47%;
+    max-width: 200px;
+    opacity: 0.8;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 300px;
+    visibility: visible;
+    z-index: 1000;
+}
+.modal {
+    height: auto;
+    max-height: 800px;
+    max-width: 900px;
+    min-height: 300px;
+    min-width: 400px;
+    width: auto;
+}
+.modal .modal-header h3 {
+    color: #AAAAAA;
+    font-weight: normal;
+    line-height: 27px;
+}
+.modal .simple_form .control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 110px;
+}
+.modal .simple_form .controls {
+    margin-left: 120px;
+    text-align: left;
+}
+.modal .table td:first-child {
+    text-align: right;
+    width: 25%;
+}
+.solife-login {
+    background: url("/assets/solife-login.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 24px;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 24px;
+}
+.solife-login.login-user {
+    background-position: 0 0;
+}
+.solife-login.login-user:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+.solife-login.login-pwd {
+    background-position: -48px 0;
+}
+.solife-login.login-pwd:hover {
+    background-color: rgba(0, 0, 0, 0);
+}

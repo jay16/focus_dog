@@ -1,6 +1,6 @@
 timestamp=$(date +"%y/%m/%d-%H:%M:%S")
 
-cd /mnt/work/etl/focus_dog
+cd /mnt/work/etl/mvc_sinatra
 /usr/bin/git init
 /usr/bin/git add -A .
 /usr/bin/git commit -a -m "${timestamp}"
