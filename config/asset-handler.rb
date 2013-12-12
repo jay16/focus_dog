@@ -16,7 +16,8 @@ class AssetHandler < Sinatra::Base
     set :show_exceptions, true
   end
 
-  require "database.rb"
+  #加载数据库及model
+  require "database"
 
   get "/javascripts/*.js" do
     pass unless settings.coffeescript?
