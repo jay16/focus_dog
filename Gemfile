@@ -3,7 +3,7 @@ source "http://ruby.taobao.org"
 #sinatra
 gem "sinatra"
 gem "sinatra-flash"
-gem "sinatra-mapping"
+#gem "sinatra-mapping"
 
 #db
 gem "dm-core"
