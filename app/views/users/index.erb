@@ -3,6 +3,7 @@
     <tr>
       <td><%= user.name %></td>
       <td><%= user.email %></td>
+      <td><%= link "edit", "/users/#{user.id}/edit" %></td>
     </tr>
   <% end %>
 </table>

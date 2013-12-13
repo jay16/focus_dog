@@ -18,16 +18,17 @@ class UserController < ApplicationController
   #new - 注册
   get "/signup" do
     @user = User.new
+    @action = "/users"
 
-    erb :signup
+    erb :form
   end
 
-  #create - 用户创建
-  post "/create" do
-    @user = User.new(params[:user])
+  #create - 创建
+  post "/" do
+    user = User.new(params[:user])
 
     if user.save
-      redirect "/users/login"
+      redirect "/users"
     else
       redirect "/users/signup"
     end
@@ -39,19 +40,31 @@ class UserController < ApplicationController
     erb :login
   end
 
-  #edit - 编辑
+  #show - 明细
   get "/:id" do |id|
     @user = User.get!(id)
 
-    erb :login
+    erb :show
+  end
+
+  #edit - 编辑
+  get "/:id/edit" do |id|
+    @user = User.get!(id)
+    @action = "/users/#{id}/update"
+ 
+    erb :form
   end
 
   #update - 更新
-  put "/:id" do |id|
+  post "/:id/update" do |id|
     @user = User.get!(id)
     state = @user.update!(params[:user])
  
-    erb :login
+    if state
+      redirect "/users"
+    else
+      redirect "/users/#{id}/edit"
+    end
   end
 
   #delete - 删除

@@ -7,7 +7,7 @@ class AssetHandler < Sinatra::Base
 
     set :root,  ENV["APP_PATH"]
     set :views, ENV["VIEW_PATH"]
-    set :public_folder, ENV["APP_PATH"] + "/public"
+    set :public_folder, ENV["APP_PATH"] + "/app/assets"
     set :js_dir,  ENV["APP_PATH"] +  "/app/assets/js"
     set :css_dir, ENV["APP_PATH"] + "/app/assets/css"
 
