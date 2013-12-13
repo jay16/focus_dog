@@ -5,12 +5,16 @@ configure do
   Dir.glob("#{ENV['APP_PATH']}/app/models/*.rb").each { |file| require file }
 
   # 自动迁移数据库
-  DataMapper.auto_migrate!
+  DataMapper.finalize.auto_upgrade!
+  #DataMapper.finalize.auto_migrate!
 
+=begin
   ["test1", "test2"].each do |name|
     User.create({:name => name,
       :email => name,
       :password => name
     })
   end
+=end
 end
+

@@ -11,15 +11,8 @@
     <meta content="width=device-width,minimum-scale=1,maximum-scale=1" name="viewport">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/css/solife-base" />
-    <script src="/js/bootstrap.js" type="text/javascript"></script>
     <script src="/js/jquery.js" type="text/javascript"></script>
-    <style>
-    .box-shadow {
-      -webkit-box-shadow:2px 2px 2px gray, -2px -2px 2px gray;
-      -moz-box-shadow:2px 2px 2px gray, -2px -2px 2px gray;
-      box-shadow:2px 2px 2px gray, -2px -2px 2px gray;
-    }
-    </style>
+    <script src="/js/bootstrap.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -28,10 +21,10 @@
         <div style="width: auto; padding-left: 15%;padding-right:10%;" class="container">
           <a href="#" class="brand">FocusMail日志管理平台</a>
           <ul class="nav pull-right">
-              <% if current_user.logged_in? %>
-		      <li><%= current_user.name %></li>
+              <% if false %>
+                      <li><%= current_user.name %></li>
               <% else %>
-		      <li><a href="/login" target="_blank">登陆FocusMail</a></li>
+                      <li><a href="/login" target="_blank">登陆FocusMail</a></li>
               <% end %>
             </ul>
         </div>

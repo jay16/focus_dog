@@ -8,6 +8,8 @@ Bundler.require(:default, ENV["RACK_ENV"])
 ENV["APP_PATH"] = Dir.pwd
 ENV["VIEW_PATH"] = Dir.pwd + "/app/views/"
 
+system("chown -R webuser:webuser #{ENV['APP_PATH']}")
+
 #扩充require路径数组
 #require 文件时会在$:数组中查找是否存在
 $:.unshift(File.join(Dir.pwd,"config"))
@@ -20,6 +22,7 @@ end
 #modle信息已在asset-hanler中加载
 #asset-hanel嵌入在application_controller
 require "asset-handler"
+require "form-helpers"
 
 %w(application home user).each do |part|
   #helper在controller中被调用，优先于controller
